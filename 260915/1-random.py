@@ -20,7 +20,12 @@ print(udda_tal)
 antal_sexor = 0
 antal_slag = 10000000
 for _ in range(antal_slag):
+    # Heltal mellan 1 och 6 (inklusive gränserna)
     tärningsslag = random.randint(1,6)
+    # Heltal från 2 till 100 (ej inklusive) med 3 steg emellan
+    test = random.randrange(2,100,3)
+    val = random.choice(["sten", "sax", "påse"])
     if tärningsslag==6:
         antal_sexor += 1
 print(f"Antalet sexor var {antal_sexor}")
+
