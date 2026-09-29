@@ -1,5 +1,7 @@
 import random
 
+area = 35
+
 def skriv_ut_meny():
     print("Hej Micke!")
     print("Du kan välja mellan att:")
@@ -32,10 +34,13 @@ def main():
     hälsa(val, age)
     hälsa(val, age)
 
+# Egendefinierade testfall
+# Bra att testa olika troliga varianter
+# plus "edge case" som skulle kunna vara fel
 assert pris_med_moms(16)==20
 assert pris_med_moms(10)==12.5
-assert pris_med_moms(0)==0
-assert pris_med_moms(-10)==0
+assert pris_med_moms(0)==0 # Vad händer vid 0?
+assert pris_med_moms(-10)==0 # Vad händer vid negativa tal?
 
     
 main()
