@@ -40,3 +40,6 @@ assert pris_med_moms(-10)==0
     
 main()
 
+
+
+
