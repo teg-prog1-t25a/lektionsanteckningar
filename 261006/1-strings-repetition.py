@@ -4,38 +4,56 @@ namn = "Michael Sebastian Hemph"
 min_sträng = namn + " är " + str(ålder)
 min_sträng = f"{namn} är {ålder}"
 
+# Använda index och slices för att ta delar av
+# och vända på strängar
 print(min_sträng[12])
 print(min_sträng[12:18])
 print(min_sträng[:-5:-1])
 
+# Använd metoder (ungefär funktioner) för att göra
+# t ex en ny sträng men med bara små bokstäver
 print(namn.lower())
 print(namn)
 namn = namn.lower()
 print(namn)
 
+# Räkna tecken i en sträng
 print(len(namn))
-# Skriver ut micke utan en ny rad efteråt
-print("micke", end="")
 
-# Skriv ut "0, 1, 2, 3," på en rad
-for idx in range(4):
+# Loopa igenom strängen
+# Skriv ut ordet med komma mellan bokstäverna
+for idx in range(len(namn)):
+    # Lägger vi till end="" i print så får vi
+    # ingen automatisk ny rad
     print(f"{idx}, ", end="")
+
+# Vi kan göra en ny rad genom en tom print()
 print()
 
+# Definiera en sträng med alla vokaler
 vokaler = "aeiouåäö"
+
+# Loopa igenom indexet för varje bokstav i namnet
 for index in range(len(namn)):
+    # Kolla om bokstaven på den platsen finns bland vokalerna
     if namn[index] in vokaler:
         print(f"{namn[index]} är en vokal")
     else:
         print(f"{namn[index]} är en konsonant") 
 
+# Om vi vill göra ett hänga gubbe-spel behöver vi ett
+# hemligt ord
 hemligt_ord = "programmering"
-gissning = "a"
-if gissning in hemligt_ord:
-    print("Du gissade rätt")
 
+# Kontrollera om en (ny) gissning ingår i ordet
+gissning = "a"
+# in kollar om den första strängen finns i den andra
+if gissning in hemligt_ord:
+    print("Bokstaven finns med i ordet")
+
+# Ta en sträng med alla gissade bokstäver
 gissade_bokstäver = "rgm"
-# Hur skriver vi ut den "maskade" strängen, dvs
+# Hur skriver vi nu ut det "maskade" ordet, dvs
 # _ r _ g r _ m m _ r _ _ g
 
 # Förslag på uppgifter
