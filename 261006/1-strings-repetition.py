@@ -36,6 +36,7 @@ gissade_bokstäver = "rgm"
 #    med alla gissningar hittills
 # 2. Skriv ut valfritt maskat ord givet det hemliga ordet
 #    och en sträng med gissade bokstäver
-# 3. Kontrollera om ordet är helt färdiggissat
-# 4. Räkna antalet gissningar (är gubben "hängd"?)
-
+# 3. Gör en FUNKTION som tar ett hemligt ord och gissade
+#    bokstäver och returnerar en maskad sträng 
+# 4. Kontrollera om ordet är helt färdiggissat
+# 5. Räkna antalet gissningar (är gubben "hängd"?)
