@@ -14,6 +14,13 @@ namn = namn.lower()
 print(namn)
 
 print(len(namn))
+# Skriver ut micke utan en ny rad efteråt
+print("micke", end="")
+
+# Skriv ut "0, 1, 2, 3," på en rad
+for idx in range(4):
+    print(f"{idx}, ", end="")
+print()
 
 vokaler = "aeiouåäö"
 for index in range(len(namn)):
@@ -40,3 +47,4 @@ gissade_bokstäver = "rgm"
 #    bokstäver och returnerar en maskad sträng 
 # 4. Kontrollera om ordet är helt färdiggissat
 # 5. Räkna antalet gissningar (är gubben "hängd"?)
+
