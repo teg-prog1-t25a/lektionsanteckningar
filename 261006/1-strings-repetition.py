@@ -25,7 +25,7 @@ print(len(namn))
 for idx in range(len(namn)):
     # Lägger vi till end="" i print så får vi
     # ingen automatisk ny rad
-    print(f"{idx}, ", end="")
+    print(namn[idx], end="")
 
 # Vi kan göra en ny rad genom en tom print()
 print()
