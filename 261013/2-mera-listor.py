@@ -1,4 +1,5 @@
 lexikon = ["Micke", "Felix", "William", "Stella", "Jovan"]
+
 lottorad = [12, 23, 2, 5, 34, 14, 9]
 vad_som_helst = ["Micke", 51, ["Sankt Paulsgatan 33A", "118 48 Stockholm"]]
 
@@ -47,3 +48,11 @@ for elev in klassen:
 lexikon[1] = "Donald"
 for ord in lexikon:
     print(ord)
+
+
+# Loopa igenom både index (platsen i listan) och värdet
+förnamn = ["Micke", "Felix", "William", "Stella", "Jovan"]
+
+for idx, namn in enumerate(förnamn):
+    plats = idx + 1 # Vill inte att det ska skrivas ut med början på 0
+    print(f"{plats}. {namn}")
